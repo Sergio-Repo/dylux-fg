@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['59172945992', 'FG98', true], 
+  ['51977802958', 'not.sxrgio', true], 
   ['5492622689586'], 
   ['5493885839638'], 
  ['573125484672'] 
@@ -34,9 +34,9 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'dylux-bot'
-global.author = '@fg98._'
-global.igfg = '\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98._\n' 
+global.packname = 'LegalizalaPeCausa'
+global.author = '@not.sxrgio'
+global.igfg = '\n▢ Sígueme en Instagram\nhttps://www.instagram.com/not.sxrgio\n' 
 global.fgsc = 'https://github.com/FG98F/dylux-fg' 
 global.fgyt = 'https://youtube.com/fg98f'
 
