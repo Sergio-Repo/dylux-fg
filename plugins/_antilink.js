@@ -15,10 +15,10 @@ export async function before(m, {conn, isAdmin, isBotAdmin }) {
             const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
             if (m.text.includes(linkThisGroup)) return !0
         }
-        await conn.sendButton(m.chat, `*≡ Enlace Detectado*
+        await conn.sendButton(m.chat, `*≡ 𝐄𝐍𝐋𝐀𝐂𝐄 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎*
             
-No permitimos enlaces de otros grupos 
-lo siento *${await this.getName(m.sender)}*  serás expulsado del grupo ${isBotAdmin ? '' : '\n\nNo soy admin así que no te puedo expulsar :"v'}`, igfg, ['Desactivar AntiLink', '/off antilink'], m)
+𝐂𝐇𝐎𝐋𝐎 𝐁𝐀𝐁𝐎𝐒𝐎 𝐍𝐎 𝐄𝐍𝐕𝐈𝐄𝐒 𝐓𝐔𝐒 𝐇𝐔𝐄𝐕𝐀𝐃𝐀𝐒 𝐃𝐄 𝐋𝐈𝐍𝐊 
+𝐂𝐇𝐀𝐔 𝐂𝐓𝐌 *${await this.getName(m.sender)}*  𝐘 𝐍𝐎 𝐕𝐔𝐄𝐋𝐕𝐀𝐒 ${isBotAdmin ? '' : '\n\nNo soy admin así que no te puedo expulsar :"v'}`, igfg, ['Desactivar AntiLink', '/off antilink'], m)
         if (isBotAdmin && chat.antiLink) {
             await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         } else if (!chat.antiLink) return //m.reply('')
